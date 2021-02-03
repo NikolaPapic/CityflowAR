@@ -1,0 +1,132 @@
+html {
+    font-family: 'Work Sans', sans-serif;
+    background: #cecece;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.header-intro {
+    background: url('/images/mapcityflow.png');
+}
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* Text styling */
+.header-title {
+width: 300px;
+}
+.header-subtitle {
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+
+/* Main content */
+.main-content {
+    width: 90%;
+    margin: auto;
+}
+.bubble {
+    position: relative;
+    height: 80vh;
+    max-width: 1000px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 900px) {
+    .bubble {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        margin-bottom: 50px;
+    }
+
+    .bubble-video {
+        overflow: hidden;
+        height: 300px;
+    }
+    .bubble-text {
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .bubble-text {
+        position: absolute;
+        width: 60%;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: 300;
+        color: #000;
+        background: #FFF;
+        padding: 60px 15px;
+        z-index: 999;
+        max-width: 500px;
+    }
+    .bubble-text h3 {
+        font-size: 2em;
+        margin-bottom: 14px;
+    }
+    
+    .bubble-video {
+        width: 70%;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        right: 0;
+        background: green;
+    }
+    
+ }
+
+ .header-info {
+    background: url('/images/6.png');
+    background-position: center;
+    text-align: center;
+ }
+.header-title {
+    color: white;
+    font-size: 50px;
+    width: 100%;
+    margin: auto;
+}
+
+.info-boxes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.box {
+    background: #cecece;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+@media only screen and (max-width: 575px) {
+    .info-boxes {
+        flex-direction: column;
+    }
+    .box {
+        margin-bottom: 30px;
+    }
+}
